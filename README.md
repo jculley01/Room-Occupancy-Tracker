@@ -1,24 +1,8 @@
 # Room and Occupancy
 
-Authors: John Culley, Kai Imery, Ananth Sanjay, Jeffrey Zhang
+Authors: John Culley
 
 Date: 2023-02-24
-
-### Summary
-
-To create the room occupancy check we first identified the key compononents of the project. The first task in the room occupancy check is to first ensure that all of the appropriate sensors are reading correct values. There are four sensors to complete the room occupancy check: ultrasonic, IR, thermistor, and solar. The next key step in our design process was being able to convert the sensor data into the appropriate engineering units and then display it with canvasJS. At this point, the final step of design was to develop an algorithm that utilized all of the sensors inputs and decided when to trigger the LED to alert that there is a user in the room. This result then would also be displayed on the canvasJS page as well. With all of the tasks identified, our team divided to complete all of the separate components. John and Ananth worked on the algorithm to determine if a person entered the room. Kai and Jeffrey worked on getting the sensor data onto canvasJS. Jeffrey also was in charge of doing the circuit component of the project. After each individual component was designed, we all brought our pieces together and began testing. From first glance it appeared that everything was working properly, but we realized that the algorithm wasn't working properly. We figured out that there was a slight logic error with an array and then modified it to fix the issue. Additionally, we were initially unsure of how often we should be refreshing the webpage, but we determined with some testing that one second was appropriate to map the change in the sensor data. At this point, our room occupancy check was able to properly determine whether a person entered the room. 
-
-### Self-Assessment 
-
-| Objective Criterion | Rating | Max Value  | 
-|---------------------------------------------|:-----------:|:---------:|
-| Objective One | 1 |  1     | 
-| Objective Two | 1 |  1     | 
-| Objective Three | 1 |  1     | 
-| Objective Four | 1 |  1     | 
-| Objective Five | 1 |  1     | 
-| Objective Six | 1 |  1     | 
-
 
 ### Solution Design
 
@@ -49,9 +33,7 @@ Picture of the real circuit with all of the sensors connected.
 
 
 ### Supporting Artifacts
-- [Link to video technical presentation](https://drive.google.com/file/d/1fv1DkznFqCfU3Npuyk9w1I-A5Rq4aI5k/view?usp=sharing). Not to exceed 120s
 - [Link to video demo](https://drive.google.com/file/d/1ovlkVKdCJ2RRw5l3wZ_r_AvLheHWm6cJ/view?usp=sharing). Not to exceed 120s
-- [Link to extra fun video](https://drive.google.com/file/d/19bXfsySWxw1WCMjh5VN6hOewvUmUo9qS/view?usp=sharing). 
 
 ### Modules, Tools, Source Used Including Attribution
 ESP32, 
